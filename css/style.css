@@ -211,6 +211,12 @@ body {
     justify-content: center;
 }
 
+.top_frame{
+    background-color: rgb(2, 126, 126);
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .aboutus_frame img {
     flex-grow: 2;
 }
