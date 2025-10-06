@@ -1,0 +1,245 @@
+/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */
+@font-face {
+    font-family: 'Shooting-star';
+    src: url('../fonts/shooting-star-personal-use.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Roboto', serif;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    max-height: 700px;
+    width: 100%;
+    background-color: rgb(183, 41, 41);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_img {
+    height: 300px;
+    width: auto;
+}
+
+.hero_img img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.hero h1 {
+    text-align: center;
+    font-family: 'Shooting-star', 'Courier New', Courier, monospace;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    font-size: 64px;
+    color: #f9d02e;
+    margin: 0;
+}
+
+.hero h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+}
+
+.nav_menu {
+    padding: 10px;
+    max-height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: solid black 1px;
+    margin-bottom: 20px;
+}
+
+.nav_menu a {
+    text-align: center;
+    width: 80px;
+    height: fit-content;
+    background-color: #e63946;
+    color: white;
+    border: black solid 3px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.nav_menu a:hover {
+    transform: scale(1.05);
+    background-color: #d62839;
+}
+
+.content_box {
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.stores_frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+}
+
+.stores_frame img {
+    width: 70%;
+    margin: 0;
+}
+
+.btn_frame {
+    height: 90px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn {
+    text-align: center;
+    width: 75px;
+    background-color: #e63946;
+    color: white;
+    border: black solid 3px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/*Default btn*/
+.btn:hover {
+    background-color: #d62839;
+    transform: scale(1.05);
+}
+
+/*btn animation*/
+.btn_frame:hover .btn {
+    color: transparent;
+    transform: rotate(360deg);
+    border-radius: 50%;
+    width: 20px;
+}
+
+.btn_frame:hover .btn::after {
+    content: "➜";
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.three_line_frame {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    padding: 10px;
+    align-items: stretch;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.aboutus_frame {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.aboutus_frame .line {
+    justify-content: center;
+}
+
+.aboutus_frame img {
+    flex-grow: 2;
+}
+
+.aboutus_frame .line .btn {
+    transition: all 0.3s ease;
+}
+
+.aboutus_frame .line .btn:hover {
+    transform: scale(1.1);
+    background-color: #871b26;
+}
+
+
+footer {
+    margin-top: 150px;
+    height: 125px;
+    max-height: 700px;
+    width: 100%;
+    background-color: rgb(198, 33, 33);
+}
+
+footer p {
+    padding-top: 7px;
+    text-align: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    gap: 100px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.center_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
