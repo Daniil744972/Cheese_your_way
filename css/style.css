@@ -103,6 +103,7 @@ body {
 }
 
 .content_box {
+    padding: 10px;
     border: solid black 1px;
     display: flex;
     justify-content: center;
@@ -242,6 +243,10 @@ footer p {
     gap: 100px;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .text_center {
     text-align: center;
 }
@@ -250,4 +255,23 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.gap10{
+gap: 10px;
+}
+.gap20{
+    gap: 20px;
+}
+
+.width40{
+width: 40%;
+}
+
+.width60{
+    width: 60%;
+}
+
+.width80{
+    width: 80%;
 }
