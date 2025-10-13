@@ -103,11 +103,10 @@ body {
 }
 
 .content_box {
-    padding: 10px;
     border: solid black 1px;
     display: flex;
     justify-content: center;
-
+    flex-direction: column;
 }
 
 .stores_frame {
@@ -177,7 +176,6 @@ body {
     width: 100%;
     display: flex;
     gap: 60px;
-    padding: 10px;
     align-items: stretch;
 }
 
@@ -191,7 +189,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    height: 100%;
+    padding: 10px;
     flex-grow: 1;
     box-sizing: border-box;
 }
@@ -294,6 +292,9 @@ footer p {
 .width80 {
     width: 80%;
 }
+.width95{
+    width: 95%;
+}
 
 .width100 {
     width: 100%;
@@ -312,45 +313,62 @@ textarea {
     resize: none;
 }
 
-form .flex-wrapper,button{
+form .flex-wrapper,
+button {
     margin-top: 17px;
 }
 
 
 button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  background: #333;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background: #555;
+    background: #555;
 }
 
 button:active {
-  background: #111;
-  transform: scale(0.97);
+    background: #111;
+    transform: scale(0.97);
 }
 
 button:focus {
-  outline: 2px solid #007BFF;
-  outline-offset: 2px;
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
 }
 
 
-.form{
-    background-color:#EDEBEB;
+.form {
+    background-color: #EDEBEB;
+    align-items: center;
 }
 
-.hint_box{
+.pad10{
+    padding: 10px;
+}
+
+.padl10{
+    padding-left: 10px;
+}
+
+
+.hint_box {
     background-color: #A5D1F1;
-    margin: 0,0,0,0;
+    width: 100%;
+    margin: 0, 0, 0, 0;
+}
+
+select, select option{
+    background-color: #fff;
+    border: 1px solid;
 }
