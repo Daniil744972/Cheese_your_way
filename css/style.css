@@ -292,7 +292,8 @@ footer p {
 .width80 {
     width: 80%;
 }
-.width95{
+
+.width95 {
     width: 95%;
 }
 
@@ -353,11 +354,11 @@ button:focus {
     align-items: center;
 }
 
-.pad10{
+.pad10 {
     padding: 10px;
 }
 
-.padl10{
+.padl10 {
     padding-left: 10px;
 }
 
@@ -368,7 +369,8 @@ button:focus {
     margin: 0, 0, 0, 0;
 }
 
-select, select option{
+select,
+select option {
     background-color: #fff;
     border: 1px solid;
 }
