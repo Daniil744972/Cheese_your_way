@@ -5,9 +5,15 @@
     font-weight: normal;
     font-style: normal;
 }
+:root{
+    --btn_clr:#D72638;
+    --btn_hover_clr: #EE182D;
+    --btn_clicked_clr:#A92230;
+    --btn_inactive_clr:#FC7986;
+}
 
 * {
-    font-family: 'Roboto', serif;
+    font-family: serif, 'Roboto';
     text-align: justify;
 }
 
@@ -25,6 +31,9 @@ body {
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .main {
@@ -40,7 +49,7 @@ body {
     display: flex;
     max-height: 700px;
     width: 100%;
-    background-color: rgb(183, 41, 41);
+    background-image: linear-gradient(to bottom left,#A9D6E5,#6DADC6);
     align-items: center;
     justify-content: center;
 }
@@ -73,33 +82,16 @@ body {
 }
 
 .nav_menu {
+    margin-top: 10px;
     padding: 10px;
     max-height: 240px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
     border-bottom: solid black 1px;
-    margin-bottom: 20px;
-}
-
-.nav_menu a {
-    text-align: center;
-    width: 80px;
-    height: fit-content;
-    background-color: #e63946;
-    color: white;
-    border: black solid 3px;
-    padding: 10px 20px;
     border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.4s ease;
-}
-
-.nav_menu a:hover {
-    transform: scale(1.05);
-    background-color: #d62839;
 }
 
 .content_box {
@@ -133,21 +125,23 @@ body {
 
 
 .btn {
+    display: flex;
     text-align: center;
-    width: 75px;
-    background-color: #e63946;
+    height: 32px;
+    width: 127px;
+    background-color: var(--btn_clr);
     color: white;
     border: black solid 3px;
-    padding: 10px 20px;
     border-radius: 8px;
-    font-size: 16px;
     transition: all 0.3s ease;
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Default btn*/
 .btn:hover {
-    background-color: #d62839;
+    background-color: var(--btn_hover_clr);
     transform: scale(1.05);
 }
 
@@ -169,6 +163,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.btn:active{
+    background-color: var(--btn_clicked_clr);
 }
 
 .three_line_frame,
@@ -225,20 +223,18 @@ body {
 
 .aboutus_frame .line .btn:hover {
     transform: scale(1.1);
-    background-color: #871b26;
 }
 
 
 footer {
-    margin-top: 150px;
-    height: 125px;
+    display: flex;
+    flex-direction: column;
     max-height: 700px;
     width: 100%;
-    background-color: rgb(198, 33, 33);
+    background-image: linear-gradient(to bottom left,#6DADC6,#A9D6E5);
 }
 
 footer p {
-    padding-top: 7px;
     text-align: center;
 }
 
