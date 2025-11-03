@@ -402,6 +402,9 @@ footer p {
 .width100 {
     width: 100%;
 }
+.height100{
+    height: 100%;
+}
 
 input,
 select {
@@ -463,6 +466,9 @@ button:focus {
 .padl10 {
     padding-left: 10px;
 }
+.padr10 {
+    padding-right: 10px;
+}
 .mr10{
     margin-right: 10px;
 }
@@ -485,4 +491,16 @@ select option {
     height: 200px !important;
     display: block;
     object-fit: contain;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.sep_line{
+    border-right: 1px solid black;
+}
+
+.spread{
+    justify-content: space-evenly;
 }
