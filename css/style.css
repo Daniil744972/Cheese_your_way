@@ -31,7 +31,7 @@ body {
     margin: 0;
 }
 
-.white{
+.white {
     background-color: #fff;
 }
 
@@ -43,6 +43,8 @@ body {
 }
 
 .main {
+    min-width: 0px;
+    width: 100%;
     max-width: 1140px;
     margin: auto;
     display: flex;
@@ -74,11 +76,11 @@ body {
 .hero h1 {
     text-align: center;
     font-family: 'Shooting-star', 'Courier New', Courier, monospace;
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
     font-size: 64px;
     color: #f9d02e;
     margin: 0;
@@ -107,14 +109,22 @@ body {
     border: solid black 1px;
 }
 
+.gradient_border {
+    border: 3px solid black;
+    border-image: linear-gradient(90deg, #F5E03A, rgb(54, 48, 17)) 1;
+}
+
 .content_box {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .stores_frame {
     width: 100%;
+    height: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +150,7 @@ body {
     display: flex;
     text-align: center;
     height: 32px;
-    width: 127px;
+    width: 120px;
     font-size: 20px;
     background-color: var(--btn_clr);
     color: white;
@@ -168,8 +178,9 @@ body {
 .btn_frame:hover .btn {
     color: transparent;
     transform: rotate(360deg);
-    border-radius: 50%;
-    width: 20px;
+    border-radius: 100%;
+    width: 60px;
+    height: 50px;
 }
 
 .btn_frame:hover .btn::after {
@@ -194,6 +205,51 @@ body {
     display: flex;
     gap: 60px;
     align-items: stretch;
+}
+
+
+.store_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem 2rem;
+    margin: 10px;
+}
+
+.image {
+    grid-row: 1 / span 2;
+}
+
+.store_img {
+    width: 230px;
+}
+
+.store_name {
+    grid-column: 2;
+    align-self: center;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.store_name h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info p,
+.info h4 {
+    margin-block: 0.15rem;
 }
 
 .two_line_frame {
@@ -407,6 +463,9 @@ button:focus {
 .padl10 {
     padding-left: 10px;
 }
+.mr10{
+    margin-right: 10px;
+}
 
 
 .hint_box {
@@ -419,4 +478,11 @@ select,
 select option {
     background-color: #fff;
     border: 1px solid;
+}
+
+
+.store_img {
+    height: 200px !important;
+    display: block;
+    object-fit: contain;
 }
