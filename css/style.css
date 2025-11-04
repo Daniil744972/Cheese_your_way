@@ -26,6 +26,9 @@ a {
     cursor: url(../img/cursor/output-onlinepngtools.png) 16 16, pointer;
 }
 
+a:hover{
+    text-decoration: underline;
+}
 html,
 body {
     background-color: #F9F9F9;
