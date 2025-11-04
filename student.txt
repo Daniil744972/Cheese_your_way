@@ -2,4 +2,4 @@ Student name: Daniil Bulatov
 Student number: 744972
 Student class: HAIT25FT1C
 GitHub Repository: https://github.com/Daniil744972/Cheese_your_way.git
-GitHub Pages URL: your github pages 
+GitHub Pages URL: https://daniil744972.github.io/Cheese_your_way
