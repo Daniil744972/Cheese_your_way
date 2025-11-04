@@ -115,7 +115,7 @@ body {
 }
 
 .content_box {
-    width: 100%;
+    width: 97%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -207,12 +207,13 @@ body {
     align-items: stretch;
     justify-content: space-around;
 }
-    .three_line_frame .line,
-    .three_line_frame .bordered_line{
-        flex:0 0 calc(30%);
-        align-items: center;
-        min-width: 240px;
-    }
+
+.three_line_frame .line,
+.three_line_frame .bordered_line {
+    flex: 0 0 calc(30%);
+    align-items: center;
+    min-width: 240px;
+}
 
 
 .store_box {
@@ -250,6 +251,7 @@ body {
 .info {
     grid-column: 2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -350,6 +352,7 @@ footer p {
 .flex-wrapper {
     display: flex;
     gap: 100px;
+
 }
 
 .column {
@@ -445,6 +448,7 @@ button {
     background-color: #EDEBEB;
     align-items: center;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .pad10 {
@@ -525,17 +529,37 @@ select option {
     font-size: 25px;
 }
 
+.mhiden {
+    display: block;
+}
+
+.wmuseum {
+    height: 100% !important;
+    max-height: 600px !important;
+}
+
 @media(max-width:1024px) {
 
     .three_line_frame .line,
     .two_line_frame .line,
     .three_line_frame .bordered_line {
-        flex: 0 0 calc(50%-60px);
+        flex: 0 0 calc(45%);
     }
 
     .three_line_frame,
     .two_line_frame {
         flex-direction: row;
+    }
+
+    .aboutus_frame {
+        flex-direction: column;
+    }
+
+    .aboutus_frame .line {
+        width: 100%;
+    }
+        .mhiden {
+        display: none;
     }
 }
 
@@ -576,6 +600,59 @@ select option {
     .three_line_frame .bordered_line {
         width: 100%;
     }
+
+    .store_box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .image {
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .store_name {
+        grid-column: auto;
+    }
+
+    .info {
+        grid-column: auto;
+        justify-content: center;
+    }
+
+    .info section {
+        flex: 2 2 50%;
+    }
+
+    .mhiden {
+        display: none;
+    }
+
+    .aboutus_frame {
+        flex-direction: column;
+    }
+
+    .aboutus_frame .line {
+        width: 100%;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form_row{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form_row select{
+        width: 45%;
+    }
+    .form_row .width35,
+    .form_row .width45,
+    .form_row textarea{
+        width: 80%;
+    }
+    textarea{
+        margin-left: 30px;
+    }
 }
 
 @media (min-width:769px) {
@@ -583,7 +660,4 @@ select option {
         display: none;
     }
 
-    .hmenu {
-        display: none;
-    }
 }
