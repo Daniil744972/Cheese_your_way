@@ -252,6 +252,7 @@ body {
     margin-block: 0.15rem;
 }
 
+
 .two_line_frame {
     gap: 90px;
 }
@@ -267,6 +268,7 @@ body {
     flex-grow: 1;
     box-sizing: border-box;
 }
+
 
 .bordered_line {
     display: flex;
@@ -310,12 +312,6 @@ body {
     height: 40%;
     object-fit: contain;
     display: block;
-}
-
-.top_frame {
-    background-color: rgb(2, 126, 126);
-    font-size: 32px;
-    font-weight: bold;
 }
 
 .aboutus_frame img {
@@ -401,6 +397,9 @@ footer p {
 
 .width100 {
     width: 100%;
+}
+.height80{
+    height: 80%;
 }
 .height100{
     height: 100%;
