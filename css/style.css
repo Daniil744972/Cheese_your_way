@@ -408,6 +408,7 @@ footer p {
 input,
 select {
     margin-left: 30px;
+    height: 1.3rem;
 }
 
 .space-between {
@@ -423,43 +424,18 @@ button {
     margin-top: 17px;
 }
 
-
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
-    background: #333;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    background: #555;
-}
-
-button:active {
-    background: #111;
-    transform: scale(0.97);
-}
-
-button:focus {
-    outline: 2px solid #007BFF;
-    outline-offset: 2px;
-}
-
-
 .form {
     background-color: #EDEBEB;
     align-items: center;
+    border-radius: 20px;
 }
 
 .pad10 {
     padding: 10px;
+}
+
+.pad0{
+    padding: 0;
 }
 
 .padl10 {
@@ -477,6 +453,7 @@ button:focus {
     background-color: #A5D1F1;
     width: 100%;
     margin: 0 0 0 0;
+    border-radius: 20px;
 }
 
 select,
@@ -502,4 +479,10 @@ select option {
 
 .spread{
     justify-content: space-evenly;
+}
+
+.img_box{
+    display: block;
+    object-fit: cover;
+    width: 100%;
 }

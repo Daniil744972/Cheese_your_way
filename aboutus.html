@@ -15,41 +15,45 @@
 <body>
     <!--#region Header-->
     <header>
-        <a href="/index.html" class="header">
-            <section class="hero_img">
-                <img src="img/Logo/Logo.png" alt="Logo">
-            </section>
-            <section class="hero">
-                <h1>
-                    Cheese your way
-                </h1>
-                <h2>
-                    Discover the Best Cheese Experiences in the Alkmaar
-                </h2>
-            </section>
-        </a>
+        <section>
+            <a href="/index.html" class="header hero_link">
+                <span class="hero_img">
+                    <img src="img/Logo/Logo.png" alt="Cheese Your Way Logo">
+                </span>
+                <section class="hero">
+                    <h1>Cheese your way</h1>
+                    <h2>Discover the Best Cheese Experiences in Alkmaar</h2>
+                </section>
+            </a>
+        </section>
+        <!--#region Nav Menu-->
+        <nav class="nav_menu white">
+            <a class="btn" href="/stores.html">Stores</a>
+            <a class="btn" href="/event.html">Events</a>
+            <a class="btn" href="/museum.html">Museum</a>
+            <a class="btn" href="/top.html">Top 5</a>
+            <a class="btn" href="/aboutus.html">About us </a>
+        </nav>
+        <!--#endregion -->
     </header>
-    <!--#endregion-->
-
-    <!--#region Nav Menu-->
-    <nav class="nav_menu">
-        <a href="/stores.html">Stores</a>
-        <a href="/event.html">Events</a>
-        <a href="/museum.html">Museum</a>
-        <a href="/top.html">Top 5</a>
-        <a href="/aboutus.html">About us </a>
-    </nav>
     <!--#endregion -->
 
     <section class="main center_items gap20">
-        <img class="width40" src="img/def.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida vel dolor non aliquam. Aliquam vel
-            eleifend ligula. Integer ac porta neque. Quisque vitae massa aliquet orci molestie pellentesque. Curabitur
-            vestibulum eleifend orci, at pellentesque diam iaculis et. Mauris finibus ex id risus ultrices volutpat.
-            Quisque congue tempus lectus, id varius enim aliquet eu. Nullam orci massa, placerat at quam quis, placerat
-            facilisis nisi. Aliquam eu molestie velit. Nulla vitae nunc nec ex congue dignissim.</p>
+        <img class="width80 img_box" src="img/aboutUs/aboutus.png" alt="">
+        <article class="content_box simple_border white">
+            <h2>Welcome to Cheese Your Way</h2>
+            <p>We’re a small team of cheese lovers based in beautiful Alkmaar, the city famous for its traditional
+                cheese market. Our mission is simple — to help you discover the most delicious, authentic, and unique
+                cheese experiences this city has to offer.</p>
 
-        <section class="content_box width100 form">
+            <p>Whether you’re a curious traveler, a true cheese connoisseur, or just someone who loves a good snack,
+                we’ll guide you through the best local shops, tastings, and hidden gems — all hand-picked and full of
+                flavor.</p>
+
+            <p>If you’ve spotted a mistake, noticed your favorite shop is missing, or just want to say hello — use the
+                form below to get in touch.</p>
+        </article>
+        <section class="content_box width100 pad0 form">
             <section class="hint_box">
                 <h3 class="padl10">Question Form</h3>
                 <p class="padl10">Fields marked with * are mandatory to fill</p>
@@ -91,7 +95,7 @@
                     <label for="message">Message*</label>
                     <textarea name="message" id="message" rows="7" required></textarea>
                 </section>
-                <button type="submit">Send</button>
+                <button class="btn" type="submit">Send</button>
             </form>
         </section>
     </section>
