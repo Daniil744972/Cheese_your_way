@@ -16,6 +16,8 @@
 * {
     font-family: serif, 'Roboto';
     text-align: justify;
+    letter-spacing: 1px;
+    line-height: 120%;
 }
 
 a {
@@ -259,6 +261,11 @@ body {
 .info p,
 .info h4 {
     margin-block: 0.15rem;
+    letter-spacing: normal;
+}
+
+.letnorm p{
+    letter-spacing: normal;
 }
 
 
@@ -487,7 +494,7 @@ select option {
 
 
 .store_img {
-    height: 200px !important;
+    height: 200px;
     display: block;
     object-fit: contain;
 }
@@ -533,9 +540,49 @@ select option {
     display: block;
 }
 
-.wmuseum {
-    height: 100% !important;
-    max-height: 600px !important;
+.aside_box {
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    background-image: url("../img/cheese.jpg");
+    border: #000 3px solid;
+}
+
+.aside_box h2 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.aside_box p {
+    font-size: 25px;
+}
+
+a:visited {
+    color: rgb(255, 238, 0)
+}
+
+.lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.indent{
+    text-indent:10px;
+    word-spacing:1px;
+}
+
+.cookie_msg {
+  position: fixed;
+  bottom: 0;
+  background:white;
+  border:1px solid black;
+  padding:10px;
+  z-index:9999;
 }
 
 @media(max-width:1024px) {
@@ -558,7 +605,8 @@ select option {
     .aboutus_frame .line {
         width: 100%;
     }
-        .mhiden {
+
+    .mhiden {
         display: none;
     }
 }
@@ -635,22 +683,27 @@ select option {
     .aboutus_frame .line {
         width: 100%;
     }
-    .form{
+
+    .form {
         flex-direction: column;
     }
-    .form_row{
+
+    .form_row {
         flex-direction: column;
         gap: 20px;
     }
-    .form_row select{
+
+    .form_row select {
         width: 45%;
     }
+
     .form_row .width35,
     .form_row .width45,
-    .form_row textarea{
+    .form_row textarea {
         width: 80%;
     }
-    textarea{
+
+    textarea {
         margin-left: 30px;
     }
 }
