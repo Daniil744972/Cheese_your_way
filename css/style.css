@@ -585,7 +585,9 @@ a:visited {
   position: fixed;
   bottom: 0;
   background:white;
-  border:1px solid black;
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
   padding:10px;
   z-index:9999;
 }
