@@ -124,7 +124,6 @@ body {
 
 .stores_frame {
     width: 100%;
-    height: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,9 +202,17 @@ body {
 .two_line_frame {
     width: 100%;
     display: flex;
-    gap: 60px;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: stretch;
+    justify-content: space-around;
 }
+    .three_line_frame .line,
+    .three_line_frame .bordered_line{
+        flex:0 0 calc(30%);
+        align-items: center;
+        min-width: 240px;
+    }
 
 
 .store_box {
@@ -359,6 +366,10 @@ footer p {
     justify-content: center;
 }
 
+.centerX {
+    align-items: center;
+}
+
 .gap5 {
     gap: 5px;
 }
@@ -398,11 +409,17 @@ footer p {
 .width100 {
     width: 100%;
 }
-.height80{
+
+.height80 {
     height: 80%;
 }
-.height100{
+
+.height100 {
     height: 100%;
+}
+
+.height50 {
+    height: 50%;
 }
 
 input,
@@ -434,17 +451,19 @@ button {
     padding: 10px;
 }
 
-.pad0{
+.pad0 {
     padding: 0;
 }
 
 .padl10 {
     padding-left: 10px;
 }
+
 .padr10 {
     padding-right: 10px;
 }
-.mr10{
+
+.mr10 {
     margin-right: 10px;
 }
 
@@ -469,20 +488,102 @@ select option {
     object-fit: contain;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.sep_line{
+.sep_line {
     border-right: 1px solid black;
 }
 
-.spread{
+.spread {
     justify-content: space-evenly;
 }
 
-.img_box{
+.img_box {
     display: block;
     object-fit: cover;
     width: 100%;
+}
+
+.museum_box {
+    display: block;
+    object-fit: contain;
+    height: auto;
+    max-height: 650px;
+}
+
+.text_box {
+    width: 70%;
+}
+
+.fm h2 {
+    font-size: 30px;
+}
+
+.fm p {
+    font-size: 25px;
+}
+
+@media(max-width:1024px) {
+
+    .three_line_frame .line,
+    .two_line_frame .line,
+    .three_line_frame .bordered_line {
+        flex: 0 0 calc(50%-60px);
+    }
+
+    .three_line_frame,
+    .two_line_frame {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:768px) {
+
+    .hamburger {
+        font-size: 32px;
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_menu {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #nav_toggle:checked+.hamburger+.nav_menu {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .three_line_frame,
+    .two_line_frame {
+        flex-direction: column;
+    }
+
+    .three_line_frame .line,
+    .two_line_frame .line,
+    .three_line_frame .bordered_line {
+        width: 100%;
+    }
+}
+
+@media (min-width:769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .hmenu {
+        display: none;
+    }
 }

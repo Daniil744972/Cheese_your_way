@@ -27,6 +27,11 @@
             </a>
         </section>
         <!--#region Nav Menu-->
+
+        <!--#region mobile menu-->
+        <input type="checkbox" id="nav_toggle" hidden>
+        <label for="nav_toggle" class="hamburger">☰</label>
+        <!-- #endregion -->
         <nav class="nav_menu white">
             <a class="btn" href="/stores.html">Stores</a>
             <a class="btn" href="/event.html">Events</a>
@@ -63,6 +68,7 @@
                     <section class="flex-wrapper column gap5">
                         <label for="salutation">Salutation* </label>
                         <select name="salutation" id="salutation" required>
+                            <option value="" disabled selected>Select…</option>
                             <option value="mr">Mr.</option>
                             <option value="mrs">Mrs.</option>
                         </select>
